@@ -39,3 +39,14 @@ git blame <파일>: 파일의 각 라인에 대한 최종 수정자 확인
 git tag <태그명>: 현재 커밋에 태그 추가
 git tag -a <태그명> -m "태그 메시지": 주석이 달린 태그 추가
 이 명령어들은 기본적인 Git 작업을 수행하는 데 도움이 됩니다. 더 많은 옵션과 명령어를 알고 싶다면 git --help를 사용하거나 Git 공식 문서를 참고하세요.
+
+kwonn@BOOK-AKBDRO9VGJ MINGW64 ~
+$ git -help
+unknown option: -help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
