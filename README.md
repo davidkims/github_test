@@ -49,4 +49,15 @@ usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
            [--super-prefix=<path>] [--config-env=<name>=<envvar>]
            <command> [<args>]
+           $ mkdir git
+cd git
+git clone https://github.com/davidkims/github_test
+Cloning into 'github_test'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 22 (delta 8), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (22/22), 12.33 KiB | 4.11 MiB/s, done.
+Resolving deltas: 100% (8/8), done.
+
 
