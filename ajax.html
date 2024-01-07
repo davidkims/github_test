@@ -1,42 +1,59 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <title>WEB1 - Welcome</title>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="colors.js"></script>
+    <style>
+        /* 추가된 스타일: 초기 상태에서의 배경색과 글자색 지정 */
+        body {
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
 <body>
 <h1><a href="index.html">WEB</a></h1>
 <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-  ">
+        function nightDayHandler(param) {
+            // 추가된 스크립트: night_day 버튼 클릭 시 배경색과 글자색 변경
+            var body = document.body;
+            if (body.style.backgroundColor === 'white') {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            } else {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+            }
+        }
+        nightDayHandler(this);
+    ">
 <ol>
     <li><a onclick="
-      fetch('html').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
-    ">HTML</a></li>
+            fetch('html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+        ">HTML</a></li>
     <li><a onclick="
-      fetch('css').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
-    ">CSS</a></li>
+            fetch('css').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+        ">CSS</a></li>
     <li><a onclick="
-      fetch('javascript').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
-    ">JavaScript</a></li>
+            fetch('javascript').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            });
+        ">JavaScript</a></li>
 </ol>
 <article>
 
 </article>
-</p>
 </body>
 </html>
